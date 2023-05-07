@@ -32,8 +32,8 @@ font-family: 'popins',Sans-Serif;
 .logo{
     text-transform: uppercase;
     cursor: pointer;
-    position: center;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
