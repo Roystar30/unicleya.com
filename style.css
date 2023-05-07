@@ -32,7 +32,7 @@ font-family: 'popins',Sans-Serif;
 .logo{
     text-transform: uppercase;
     cursor: pointer;
-    position: center;
+    position: space-between;
     
 }
 
