@@ -1,0 +1,49 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .h1 {
+            text-align: left;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        p {
+            text-align: justify;
+        }
+         .explore-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            float: right; 
+         }
+         .explore-button:hover {
+            background-color: #2980b9;
+        }
+         /* Styles for header */
+          .head {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
