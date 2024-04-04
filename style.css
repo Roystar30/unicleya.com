@@ -1,3 +1,17 @@
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Logo styles */
+.logo {
+    margin: 0; /* Remove default margin */
+}
+
+
 /* Navigation menu icon styles */
 .nav-icon {
     display: flex;
