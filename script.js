@@ -7,11 +7,11 @@ function toggleNav() {
         // Close navigation
         navIcon.classList.remove("active");
         closeBtn.style.display = "none";
-        sideNav.style.width = "0";
+        sideNav.style.left = "-250px";
     } else {
         // Open navigation
         navIcon.classList.add("active");
         closeBtn.style.display = "block";
-        sideNav.style.width = "250px";
+        sideNav.style.left = "0";
     }
 }
