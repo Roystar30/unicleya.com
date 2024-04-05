@@ -18,6 +18,7 @@ header {
 .logo {
     margin: 0; /* Remove default margin */
     color: #333; /* Text color for the logo */
+    position: center 
 }
 
 /* Navigation menu icon styles */
