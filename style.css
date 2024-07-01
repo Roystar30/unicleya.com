@@ -29,35 +29,10 @@ body {
     padding: 10px 15px;
     border: none;
     transition: transform 0.5s;
-    position: relative;
 }
 
 .header .openbtn.transform {
-    transform: rotate(45deg);
-}
-
-.header .openbtn::before, .header .openbtn::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform-origin: center;
-    transition: transform 0.5s;
-}
-
-.header .openbtn::before {
-    transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.header .openbtn.transform::before {
-    transform: translate(-50%, -50%) rotate(0);
-}
-
-.header .openbtn.transform::after {
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .header-title {
@@ -97,7 +72,6 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .sidebar a {
