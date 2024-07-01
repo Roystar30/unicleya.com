@@ -17,7 +17,7 @@ body {
     top: 0;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -29,6 +29,7 @@ body {
     padding: 10px 15px;
     border: none;
     transition: transform 0.5s;
+    margin-right: auto;
 }
 
 .header .openbtn.transform {
@@ -112,14 +113,38 @@ body {
 h2 {
     color: #333;
     margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
 }
 
 p {
     color: #555;
+    text-align: justify;
+    margin-bottom: 1.5em;
 }
 
 ul {
     color: #555;
     list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+    .header .openbtn {
+        margin-bottom: 10px;
+    }
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p, ul {
+        font-size: 0.9em;
+    }
 }
