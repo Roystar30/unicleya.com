@@ -48,10 +48,15 @@ body {
     color: white;
     padding: 10px 15px;
     border: none;
+    transition: transform 0.5s;
 }
 
 .openbtn:hover {
     background-color: #444;
+}
+
+.openbtn.transform {
+    transform: rotate(90deg);
 }
 
 #main {
@@ -71,6 +76,17 @@ h1 {
     color: #333;
 }
 
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
 p {
     color: #555;
+}
+
+ul {
+    color: #555;
+    list-style-type: disc;
+    padding-left: 20px;
 }
