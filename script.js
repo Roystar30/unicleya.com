@@ -1,11 +1,15 @@
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.querySelector('.openbtn').classList.add('transform');
-}
+function toggleNav() {
+    let sidebar = document.getElementById("mySidebar");
+    let main = document.getElementById("main");
+    let openBtn = document.querySelector('.openbtn');
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.querySelector('.openbtn').classList.remove('transform');
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+        main.style.marginLeft = "0";
+        openBtn.classList.remove('transform');
+    } else {
+        sidebar.style.width = "250px";
+        main.style.marginLeft = "250px";
+        openBtn.classList.add('transform');
+    }
 }
