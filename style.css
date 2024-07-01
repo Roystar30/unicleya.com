@@ -16,6 +16,36 @@ body {
     width: 100%;
     top: 0;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    transition: transform 0.5s;
+}
+
+.header .openbtn:hover {
+    background-color: #444;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    animation: animateTitle 3s linear infinite;
+}
+
+@keyframes animateTitle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .footer {
@@ -27,6 +57,9 @@ body {
     width: 100%;
     bottom: 0;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar {
@@ -64,32 +97,10 @@ body {
     margin-left: 50px;
 }
 
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    transition: transform 0.5s;
-    position: fixed;
-    top: 60px; /* Adjusted to be below the fixed header */
-    left: 0;
-    z-index: 3;
-}
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-.openbtn.transform {
-    transform: rotate(90deg);
-}
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    margin-top: 60px; /* Adjusted to be below the fixed header */
+    margin-top: 60px;
 }
 
 .container {
