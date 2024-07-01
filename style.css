@@ -10,7 +10,7 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -19,7 +19,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .header .openbtn {
@@ -30,10 +29,35 @@ body {
     padding: 10px 15px;
     border: none;
     transition: transform 0.5s;
+    position: relative;
 }
 
-.header .openbtn:hover {
-    background-color: #444;
+.header .openbtn.transform {
+    transform: rotate(45deg);
+}
+
+.header .openbtn::before, .header .openbtn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.header .openbtn::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.header .openbtn.transform::before {
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+.header .openbtn.transform::after {
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .header-title {
