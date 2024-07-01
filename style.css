@@ -3,13 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #eef2f3;
+    background-color: #6e454f; /* Silent maroon color */
     overflow-x: hidden;
 }
 
 .header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    color: #333;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .header .openbtn {
@@ -49,8 +50,8 @@ body {
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    color: #333;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -60,6 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .sidebar {
@@ -106,8 +108,9 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Rounded corners */
 }
 
 h2 {
