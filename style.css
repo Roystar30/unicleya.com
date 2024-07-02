@@ -42,7 +42,6 @@ body {
     font-size: 24px;
     animation: fadeIn 3s linear infinite;
     text-align: center;
-    flex: 1;
 }
 
 @keyframes fadeIn {
